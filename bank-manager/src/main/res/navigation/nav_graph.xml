@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@+id/nav_graph"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="org.hyperskill.simplebankmanager.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_userMenuFragment"
+            app:destination="@id/userMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMenuFragment"
+        android:name="org.hyperskill.simplebankmanager.UserMenuFragment"
+        android:label="fragment_user_menu"
+        tools:layout="@layout/fragment_user_menu">
+        <action
+            android:id="@+id/action_userMenuFragment_to_viewBalanceFragment"
+            app:destination="@id/viewBalanceFragment" />
+        <action
+            android:id="@+id/action_userMenuFragment_to_transferFundsFragment"
+            app:destination="@id/transferFundsFragment" />
+        <action
+            android:id="@+id/action_userMenuFragment_to_calculateExchangeFragment"
+            app:destination="@id/calculateExchangeFragment" />
+        <action
+            android:id="@+id/action_userMenuFragment_to_payBillsFragment"
+            app:destination="@id/payBillsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewBalanceFragment"
+        android:name="org.hyperskill.simplebankmanager.ViewBalanceFragment"
+        android:label="fragment_view_balance"
+        tools:layout="@layout/fragment_view_balance" />
+    <fragment
+        android:id="@+id/transferFundsFragment"
+        android:name="org.hyperskill.simplebankmanager.TransferFundsFragment"
+        android:label="fragment_transfer_funds"
+        tools:layout="@layout/fragment_transfer_funds">
+        <action
+            android:id="@+id/action_transferFundsFragment_to_userMenuFragment"
+            app:destination="@id/userMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculateExchangeFragment"
+        android:name="org.hyperskill.simplebankmanager.CalculateExchangeFragment"
+        android:label="fragment_calculate_exchange"
+        tools:layout="@layout/fragment_calculate_exchange" />
+    <fragment
+        android:id="@+id/payBillsFragment"
+        android:name="org.hyperskill.simplebankmanager.PayBillsFragment"
+        android:label="fragment_pay_bills"
+        tools:layout="@layout/fragment_pay_bills">
+        <action
+            android:id="@+id/action_payBillsFragment_to_userMenuFragment"
+            app:destination="@id/userMenuFragment" />
+    </fragment>
+</navigation>

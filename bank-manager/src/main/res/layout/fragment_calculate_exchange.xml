@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".CalculateExchangeFragment">
+
+    <Button
+        android:id="@+id/calculateExchangeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateExchangeAmountEditText"
+        android:layout_margin="10dp"
+        android:text="@string/calculate_exchange_calculate" />
+
+    <EditText
+        android:id="@+id/calculateExchangeAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateExchangeDisplayTextView"
+        android:layout_margin="10dp"
+        android:hint="@string/calculate_exchange_enter_amount"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:id="@+id/calculateExchangeFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/calculateExchangeFromSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/calculateExchangeLabelFromTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_exchange_convert_from" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calculateExchangeTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateExchangeFrom"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/calculateExchangeToSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/calculateExchangeLabelToTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_exchange_convert_to" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/calculateExchangeDisplayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculateExchangeTo"
+        android:layout_margin="10dp" />
+</RelativeLayout>

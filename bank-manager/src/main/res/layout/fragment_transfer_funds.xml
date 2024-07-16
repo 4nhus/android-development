@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".TransferFundsFragment">
+
+    <Button
+        android:id="@+id/transferFundsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transferFundsAmountEditText"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:text="@string/transfer_funds_transfer" />
+
+    <EditText
+        android:id="@+id/transferFundsAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transferFundsAccountEditText"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:hint="@string/transfer_funds_amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/transferFundsAccountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:hint="@string/transfer_funds_account_number"
+        android:inputType="text" />
+</RelativeLayout>
