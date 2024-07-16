@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="search_button">search</string>
+    <string name="menu_add_playlist">Add Playlist</string>
+    <string name="menu_delete_playlist">Delete Playlist</string>
+    <string name="menu_load_playlist">Load Playlist</string>
+    <string name="player_controller_time">00:00</string>
+    <string name="player_controller_playpause">play/pause</string>
+    <string name="player_controller_stop">stop</string>
+    <string name="add_playlist_hint">Playlist Name</string>
+    <string name="add_playlist_cancel">Cancel</string>
+    <string name="add_playlist_ok">Ok</string>
+</resources>
